@@ -10,8 +10,19 @@ Remember to export the component at the end
 
 import React from 'react'
 import { Routes, Route } from 'react-router'
-// Write component imports here //
 
+import Home from './components/Home';
+// Write component imports here //
+ReactDOM.createRoot(root).render(
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/car" element={<About/>} />
+      </Routes>
+    </BrowserRouter>
+  );
+  
 
 
 // Start Router function here //
